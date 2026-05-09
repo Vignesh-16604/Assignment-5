@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <script src="mini.js" defer></script>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid #333;
+            background: white;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            width: 95%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+        }
+        #message {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Student Registration</h2>
+    <form id="regForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Name">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter Email">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button type="submit">Register</button>
+    </form>
+    <div id="message"></div>
+</div>
+</body>
+</html>
